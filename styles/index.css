@@ -48,9 +48,13 @@ body{
     margin: auto;
 }
 
-.hyperlinks{
+.hyperlink{
     text-decoration: none;
     color: inherit;
+}
+
+.hyperlink:visited{
+    color: var(--purple);
 }
 
 .navbar{
@@ -180,6 +184,13 @@ body{
 
 #container{
     height: 90%;
+}
+
+/* SPECIFIC */
+
+.navbar img{
+    width: 50px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 800px){

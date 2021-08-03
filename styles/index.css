@@ -6,10 +6,8 @@
 
 :root{
     /* stock sugarcubes dracula theme */
-    --dark: #282a36;
     --mid-dark: #44475a;
     --cyan: #8be9fd;
-    --light: #f8f8f2;
     --accents: #1867cf;
     --green: #50fa7b;
     --orange: #ffb86c;
@@ -18,6 +16,8 @@
     --red: #ff5555;
     --yellow: #f1fa8c;
 
+    --light: #fefefe;
+    --dark: #282a25;
 }
 
 body{
@@ -57,6 +57,10 @@ body{
     color: var(--purple);
 }
 
+.hyperlink:hover{
+    color: var(--accents);
+}
+
 .navbar{
     height: 10%;
     width: 100%; 
@@ -86,6 +90,7 @@ body{
 .grid{
     display: grid;
     place-content: center;
+    width: 100%;
 }
 
 .grid-5{
@@ -190,8 +195,48 @@ body{
 
 .navbar img{
     width: 50px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
+
+.card{
+    background: linear-gradient(153.43deg, #FFC9C9 0%, rgba(255, 201, 201, 0.8) 83.33%);
+    border-radius: 50px !important; /*override border imported radius*/
+    padding: 3em !important;
+}
+
+.mini-card{
+    display: flex;
+    margin: 10px 0;
+    padding: 1em;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.mini-card img{
+    width: 50px;
+    margin: 0 25px;
+    border-radius: 10px;
+}
+
+.text-art{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.hero{
+    font-size: 500%;
+    font-weight: 700;
+    margin-left: 10%;
+    
+}
+
+.sub-hero{
+    font-size: 400%;
+    opacity: 0.8;
+    font-weight: 500;
+}
+ 
 
 @media screen and (max-width: 800px){
     .grid-4, .grid-3, .grid-2, .grid-5{

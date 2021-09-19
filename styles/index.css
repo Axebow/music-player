@@ -199,14 +199,17 @@ body{
 }
 
 .card{
+    padding: 3em !important;
+}
+
+.card-styled{
     background: linear-gradient(153.43deg, #FFC9C9 0%, rgba(255, 201, 201, 0.8) 83.33%);
     border-radius: 50px !important; /*override border imported radius*/
-    padding: 3em !important;
 }
 
 .mini-card{
     display: flex;
-    margin: 10px 0;
+    margin: 10px;
     padding: 1em;
     background: rgba(255, 0, 0, 0.1);
     border-radius: 15px;
